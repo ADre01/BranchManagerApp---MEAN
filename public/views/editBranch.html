@@ -1,0 +1,25 @@
+ <form class="form-horizontal" ng-init="editBranch()" ng-submit="updateBranch()">
+  <fieldset>
+    <legend>Add a new Branch</legend>
+    <div class="form-group">
+      <label class="col-lg-2 control-label">Name</label>
+      <div class="col-lg-10">
+        <input class="form-control" ng-model="branch.name" placeholder="Product" type="text">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-lg-2 control-label">Address</label>
+      <div class="col-lg-10">
+        <input class="form-control" ng-model="branch.address" placeholder="Description" type="text">
+      </div>
+    </div>
+
+
+
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </fieldset>
+</form>

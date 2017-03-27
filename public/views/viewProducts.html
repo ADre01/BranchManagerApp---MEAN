@@ -1,0 +1,13 @@
+<form class="navbar-form navbar-left" role="search">
+    <div class="form-group">
+        <input class="form-control" autofocus ng-model="search" placeholder="Search" type="text">
+    </div>
+ 
+</form>
+
+   <div class="well well-design">
+    <h2 class="heading">Current Products - Click to edit</h2>
+    <ul ng-repeat="product in ALLproducts | filter: search">
+        <li><a href="#!/editProduct/{{product._id}}" ng-click="getProductDetails(product._id)">{{product.title}}</a></li>
+    </ul>
+</div>

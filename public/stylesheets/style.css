@@ -1,0 +1,18 @@
+.well-design ul li a{
+    list-style-type: none;
+    font-size: 20px;
+    color: black;
+}
+
+.well-design ul{
+    text-decoration: none;
+     list-style-type: none;
+}
+
+.heading{
+    margin: 60px 0 20px 0;
+}
+
+.glyph-pull{
+    margin-left: 20px;
+}

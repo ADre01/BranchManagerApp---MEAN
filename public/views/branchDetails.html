@@ -1,0 +1,48 @@
+<div class="well">
+    <h1>{{mainbranch.name}}</h1>
+    {{mainbranch.address}}
+</div>
+<div class="well">
+    <div class="row">
+    <div class="panel panel-info col-md-6">
+        <div class="panel-heading">All Products</div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr ng-repeat="prod in allproducts">
+                        <td>{{prod.title}}</td>
+                        <td>{{prod.description}}</td>
+                        <td><button ng-click="addToBranch(prod._id)" class="btn btn-info glyphicon glyphicon-download-alt"></button></td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+     <div class="panel panel-info col-md-6">
+        <div class="panel-heading">Branch Products</div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr ng-repeat="prods in mainbranch.products">
+                        <td>{{prods.title}}</td>
+                        <td>{{prods.description}}</td>
+                        <td>{{prods.price}}</td>
+                        <td><button class="btn btn-danger glyphicon glyphicon-remove" ng-click="removeProductFromBranch(prods._id)"></button></td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
