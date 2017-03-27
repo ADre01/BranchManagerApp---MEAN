@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var dbURI = 'mongodb://localhost/branchManager';
+var dbURI = 'mongodb://appharbor_67mhdnb2:9g34l09avtare49ihut435a6qp@ds145677.mlab.com:45677/appharbor_67mhdnb2';
 
 mongoose.connect(dbURI);
 
